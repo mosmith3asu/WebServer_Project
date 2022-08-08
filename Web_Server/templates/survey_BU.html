@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    .survey_table {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .survey_header {
+         font-weight: normal;
+         padding-right: 10px;
+         padding-left: 0px;
+         text-align: left;
+     }
+     .blank_row  {
+        height: 10px !important; /* overwrites any other rules */
+    }
+    .row_subtitle  {
+        font-size: 18px;
+        font-weight: bold;
+        background-color: #C5C6D0;
+    }
+    .row_header {
+        text-align: right;
+    }
+    .drawspace {
+        width: 700px;
+        height: 700px;
+        float: center;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid violet;
+    }
+    .submit_button {
+        //background-color: #555555;
+        //border: none;
+        //color: white;
+        /*padding: 15px 32px;*/
+        //text-align: center;
+        //text-decoration: none;
+        //display: inline-block;
+        //font-size: 16px;
+        width:300px;
+        height:30px;
+    }
+    .centered_button_container {
+        margin-top: 50px;
+        margin-left: 200px;
+        margin-right: 0px;
+    }
+    .page_title {
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .page_title_subtext {
+        margin-top: 10px;
+        margin-left: 5%;
+        margin-right: 5%;
+        text-align: left;
+    }
+
+</style>
+
+<body>
+<!--Souce: https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_form_radio_inline&stacked=h-->
+<!--<form>-->
+<!--    <label class="radio-inline"> <input type="radio" name="optradio" checked></label>-->
+<!--    <label class="radio-inline"> <input type="radio" name="optradio"></label>-->
+<!--    <label class="radio-inline"> <input type="radio" name="optradio"></label>-->
+<!--  </form>-->
+<div class="drawspace">
+    <h1 class="page_title">Survey</h1>
+    <p class="page_title_subtext">
+        Please complete the following survey based on your feelings when interacting with your virtual partner.
+        When you are finished responding, please press the "Submit" button to continue.
+    </p>
+<form method='POST'>
+<table class = "survey_table">
+    <tr class="blank_row"> <td colspan="12"></td> </tr>
+    <tr> <td colspan="12" class="row_subtitle">
+        What % of the time will this partner be....
+        </td>
+    </tr>
+    <tr>
+        <th></th>
+        <th class="survey_header">0% </th>
+        <th class="survey_header">10% </th>
+        <th class="survey_header">20% </th>
+        <th class="survey_header">30% </th>
+        <th class="survey_header">40% </th>
+        <th class="survey_header">50% </th>
+        <th class="survey_header">60% </th>
+        <th class="survey_header">70% </th>
+        <th class="survey_header">80% </th>
+        <th class="survey_header">90% </th>
+        <th class="survey_header">100% </th>
+    </tr>
+    <tr>
+        <td class="row_header">Dependable</td>
+        <td><input type="radio" name="row-1" data-col="0"></td>
+        <td><input type="radio" name="row-1" data-col="1"></td>
+        <td><input type="radio" name="row-1" data-col="2"></td>
+        <td><input type="radio" name="row-1" data-col="3"></td>
+        <td><input type="radio" name="row-1" data-col="4"></td>
+        <td><input type="radio" name="row-1" data-col="5"></td>
+        <td><input type="radio" name="row-1" data-col="6"></td>
+        <td><input type="radio" name="row-1" data-col="7"></td>
+        <td><input type="radio" name="row-1" data-col="8"></td>
+        <td><input type="radio" name="row-1" data-col="9"></td>
+        <td><input type="radio" name="row-1" data-col="10"></td>
+
+    </tr>
+    <tr>
+        <td class="row_header">Reliable</td>
+        <td><input type="radio" name="row-2" data-col="0"></td>
+        <td><input type="radio" name="row-2" data-col="1"></td>
+        <td><input type="radio" name="row-2" data-col="2"></td>
+        <td><input type="radio" name="row-2" data-col="3"></td>
+        <td><input type="radio" name="row-2" data-col="4"></td>
+        <td><input type="radio" name="row-2" data-col="5"></td>
+        <td><input type="radio" name="row-2" data-col="6"></td>
+        <td><input type="radio" name="row-2" data-col="7"></td>
+        <td><input type="radio" name="row-2" data-col="8"></td>
+        <td><input type="radio" name="row-2" data-col="9"></td>
+        <td><input type="radio" name="row-2" data-col="10"></td>
+    </tr>
+    <tr>
+        <td class="row_header">Unresponsive</td>
+        <td><input type="radio" name="row-3" data-col="0"></td>
+        <td><input type="radio" name="row-3" data-col="1"></td>
+        <td><input type="radio" name="row-3" data-col="2"></td>
+        <td><input type="radio" name="row-3" data-col="3"></td>
+        <td><input type="radio" name="row-3" data-col="4"></td>
+        <td><input type="radio" name="row-3" data-col="5"></td>
+        <td><input type="radio" name="row-3" data-col="6"></td>
+        <td><input type="radio" name="row-3" data-col="7"></td>
+        <td><input type="radio" name="row-3" data-col="8"></td>
+        <td><input type="radio" name="row-3" data-col="9"></td>
+        <td><input type="radio" name="row-3" data-col="10"></td>
+    </tr>
+    <tr>
+        <td class="row_header">Predictable</td>
+        <td><input type="radio" name="row-4" data-col="0"></td>
+        <td><input type="radio" name="row-4" data-col="1"></td>
+        <td><input type="radio" name="row-4" data-col="2"></td>
+        <td><input type="radio" name="row-4" data-col="3"></td>
+        <td><input type="radio" name="row-4" data-col="4"></td>
+        <td><input type="radio" name="row-4" data-col="5"></td>
+        <td><input type="radio" name="row-4" data-col="6"></td>
+        <td><input type="radio" name="row-4" data-col="7"></td>
+        <td><input type="radio" name="row-4" data-col="8"></td>
+        <td><input type="radio" name="row-4" data-col="9"></td>
+        <td><input type="radio" name="row-4" data-col="10"></td>
+    </tr>
+
+
+    <tr class="blank_row"> <td colspan="12"></td> </tr>
+
+    <tr> <td colspan="12" class="row_subtitle"> What % of the time will this partner.... </td>  </tr>
+    <tr>
+        <th></th>
+        <th class="survey_header">0% </th>
+        <th class="survey_header">10% </th>
+        <th class="survey_header">20% </th>
+        <th class="survey_header">30% </th>
+        <th class="survey_header">40% </th>
+        <th class="survey_header">50% </th>
+        <th class="survey_header">60% </th>
+        <th class="survey_header">70% </th>
+        <th class="survey_header">80% </th>
+        <th class="survey_header">90% </th>
+        <th class="survey_header">100% </th>
+    </tr>
+    <tr>
+        <td class="row_header">Act consistently</td>
+        <td><input type="radio" name="row-5" data-col="0"></td>
+        <td><input type="radio" name="row-5" data-col="1"></td>
+        <td><input type="radio" name="row-5" data-col="2"></td>
+        <td><input type="radio" name="row-5" data-col="3"></td>
+        <td><input type="radio" name="row-5" data-col="4"></td>
+        <td><input type="radio" name="row-5" data-col="5"></td>
+        <td><input type="radio" name="row-5" data-col="6"></td>
+        <td><input type="radio" name="row-5" data-col="7"></td>
+        <td><input type="radio" name="row-5" data-col="8"></td>
+        <td><input type="radio" name="row-5" data-col="9"></td>
+        <td><input type="radio" name="row-5" data-col="10"></td>
+    </tr>
+    <tr>
+        <td class="row_header">Meet the needs of the task</td>
+        <td><input type="radio" name="row-6" data-col="0"></td>
+        <td><input type="radio" name="row-6" data-col="1"></td>
+        <td><input type="radio" name="row-6" data-col="2"></td>
+        <td><input type="radio" name="row-6" data-col="3"></td>
+        <td><input type="radio" name="row-6" data-col="4"></td>
+        <td><input type="radio" name="row-6" data-col="5"></td>
+        <td><input type="radio" name="row-6" data-col="6"></td>
+        <td><input type="radio" name="row-6" data-col="7"></td>
+        <td><input type="radio" name="row-6" data-col="8"></td>
+        <td><input type="radio" name="row-6" data-col="9"></td>
+        <td><input type="radio" name="row-6" data-col="10"></td>
+    </tr>
+    <tr>
+        <td class="row_header">Perform as expected</td>
+        <td><input type="radio" name="row-7" data-col="0"></td>
+        <td><input type="radio" name="row-7" data-col="1"></td>
+        <td><input type="radio" name="row-7" data-col="2"></td>
+        <td><input type="radio" name="row-7" data-col="3"></td>
+        <td><input type="radio" name="row-7" data-col="4"></td>
+        <td><input type="radio" name="row-7" data-col="5"></td>
+        <td><input type="radio" name="row-7" data-col="6"></td>
+        <td><input type="radio" name="row-7" data-col="7"></td>
+        <td><input type="radio" name="row-7" data-col="8"></td>
+        <td><input type="radio" name="row-7" data-col="9"></td>
+        <td><input type="radio" name="row-7" data-col="10"></td>
+    </tr>
+</table>
+   <div class="centered_button_container">
+       <button class="button submit_button" name="submit_response" value="submit_response">Submit</button>
+   </div>
+
+
+</form>
+</div>
+
+
+</body>
+</html>

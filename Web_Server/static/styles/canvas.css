@@ -1,0 +1,51 @@
+.controls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    padding: 10px 15px 10px 15px;
+}
+
+.up, .left, .down, .right {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background: rgb(100, 10, 10);
+    color: rgb(240, 220, 180);
+    padding: 8px 24px 8px 24px;
+    margin: 3px;
+    text-align: center;
+    cursor: pointer;
+    font-size: small;
+    align-items: center;
+}
+
+
+.container {
+ width: 700px;height: 700px; border: 1px solid violet;
+}
+
+canvas {
+  border: 1px solid violet;
+}
+
+
+body {
+ margin: 20px;
+ }
+header {
+text-align: center;
+}
+
+div.drawspace {
+    width: 200px;
+    margin: auto;
+    border: 1px solid violet;
+}
+.box {
+width: 700px;
+height: 700px;
+float: left;
+}

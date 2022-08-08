@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Home Page{% endblock %}
+{% block content %}
+<!--        <center>-->
+<!--                <h3>Joint-Pursuit Experiment</h3>-->
+<!--                <img src=".\static\IMG\{{ user_image }}" alt="{{ user_image }}" height="700px" width="700px">-->
+<!--                <button type="button">Click Me!</button>-->
+<!--        </center>-->
+
+<center>
+        <div class="imgContainer">
+            <div>
+                <img src=".\static\IMG\{{ user_image }}" alt="{{ user_image }}" height="700px" width="700px">
+            </div>
+            <div class="imgButton">
+                <!--                    <button class="button back_button">Back</button>-->
+                <!--                    <button class="button continue_button">Continue</button>-->
+                <form method='POST'>
+                    <button class="button back_button" name="submit_back" value="submit_back">Back</button>
+                    <button class="button continue_button" name="submit_continue" value="submit_continue">Continue</button>
+                </form>
+            </div>
+        </div>
+</center>
+{% endblock %}

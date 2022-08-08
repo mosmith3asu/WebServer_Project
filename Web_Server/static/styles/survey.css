@@ -1,0 +1,38 @@
+.survey_table {
+    margin-left: auto;
+    margin-right: auto;
+}
+.survey_header {
+     font-weight: normal;
+     padding-right: 10px;
+     padding-left: 0px;
+     text-align: left;
+ }
+ .blank_row  {
+    height: 10px !important; /* overwrites any other rules */
+}
+.row_subtitle  {
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #C5C6D0;
+}
+.row_header {
+    text-align: right;
+}
+    .submit_button {
+    //background-color: #555555;
+    //border: none;
+    //color: white;
+    /*padding: 15px 32px;*/
+    //text-align: center;
+    //text-decoration: none;
+    //display: inline-block;
+    //font-size: 16px;
+    width:300px;
+    height:30px;
+}
+.centered_button_container {
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-right: 0px;
+}

@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Home Page{% endblock %}
+{% block content %}
+
+<h1>Risk Information Page</h1>
+<script>
+        var penalty = '{{pen}}';
+        var penalty_prob = '{{prob}}';
+</script>
+
+<center>
+        <div class="imgContainer">
+                <div class="container" style="width: 700px;height: 700px; border: 1px solid violet;">
+                        <h1>Upon entering a penalty state, you have....</h1>
+                        <h2>a {{prob}}% chance of getting </h2>
+                        <h2> a {{pen}} penalty to your score</h2>
+        <!--                <div> <img src=".\static\IMG\{{ user_image }}" alt="{{ user_image }}" height="700px" width="700px"> </div>-->
+
+                </div>
+                <div class="imgButton">
+                        <form method='POST'>
+                                <button class="button play_button" name="submit_play" value="submit_play">Play Game</button>
+
+                        </form>
+                </div>
+        </div>
+</center>
+
+{% endblock %}
